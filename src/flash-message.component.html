@@ -1,0 +1,11 @@
+<div class="flash-messages" [ngClass]="messagePositioning">
+    <div *ngFor="let msg of flashMsg">
+        <div class="alert" *ngIf="msg.message" [ngClass]="msg.isSuccess ? 'alert-success' : msg.isError
+            ? 'alert-danger' : msg.isWarning ? 'alert-warning' : 'alert-info'" [id]="msg.uuid">
+            <i (click)="destroy(msg.uuid)" class="fa fa-close" aria-hidden="true"></i>
+            <div>
+                <p>{{msg.message}}</p>
+            </div>
+        </div>
+    </div>
+</div>

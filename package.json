@@ -1,0 +1,45 @@
+{
+  "name": "angular2-flash-message",
+  "version": "0.0.1",
+  "description": "Angular2 Flash message notification",
+  "main": "index.js",
+  "scripts": {
+    "rimraf": "rimraf",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "npm cache clean && npm run rimraf -- node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aamirvohra/angular2-flash-message.git"
+  },
+  "keywords": [
+    "Flash",
+    "Growl",
+    "Angular2"
+  ],
+  "author": "Aamir Vohra",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "2.2.4",
+    "@angular/compiler": "2.2.4",
+    "@angular/core": "2.2.4",
+    "@angular/forms": "2.2.4",
+    "@angular/http": "2.2.4",
+    "@angular/platform-browser": "2.2.4",
+    "@angular/platform-browser-dynamic": "2.2.4",
+    "@angular/router": "3.2.4",
+    "@types/lodash": "^4.14.42",
+    "lodash": "^4.17.2",
+    "rxjs": "5.0.0-rc.4",
+    "zone.js": "0.7.2"
+  },
+  "bugs": {
+    "url": "https://github.com/aamirvohra/angular2-flash-message/issues"
+  },
+  "homepage": "https://github.com/aamirvohra/angular2-flash-message#readme",
+  "devDependencies": {
+    "rimraf": "^2.5.4",
+    "tslint": "^3.15.1",
+    "tslint-loader": "^3.3.0"
+  }
+}
