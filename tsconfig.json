@@ -11,7 +11,7 @@
     "declaration": true
   },
   "files": [
-    "./module/flash-message.ts",
+    "./module/angular2-flash-message.ts",
     "./index.ts"
   ],
   "exclude": [
