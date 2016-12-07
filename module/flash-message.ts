@@ -23,7 +23,6 @@ export class FlashMessage implements FlashMessageInterface {
     this._uuid = this.getUUId();
   }
 
-  // TODO move this to some helper class
   private getUUId() {
     return this.randomizer() + this.randomizer() + '-' + this.randomizer() + '-' + this.randomizer() + '-' +
       this.randomizer() + '-' + this.randomizer() + this.randomizer() + this.randomizer();

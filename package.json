@@ -18,7 +18,7 @@
     "Angular2"
   ],
   "author": "Aamir Vohra",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@angular/common": "2.2.4",
     "@angular/compiler": "2.2.4",
