@@ -6,13 +6,12 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "removeComments": true,
-    "sourceMap": true,
-    "outDir": "../lib",
+    "sourceMap": false,
     "declaration": true
   },
   "files": [
-    "./module/angular2-flash-message.ts",
-    "./index.ts"
+    "./index.ts",
+    "./module/angular2-flash-message.ts"
   ],
   "exclude": [
     "app",

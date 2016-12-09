@@ -1,6 +1,6 @@
 {
   "name": "angular2-flash-message",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Angular2 Flash message notification",
   "main": "index.js",
   "scripts": {
