@@ -10,7 +10,7 @@ import { findIndex } from 'lodash';
                 <div *ngFor="let msg of flashMsg">
                   <div class="alert" *ngIf="msg.message" [ngClass]="msg.isSuccess ? 'alert-success' : msg.isError
                       ? 'alert-danger' : msg.isWarning ? 'alert-warning' : 'alert-info'" [id]="msg.uuid">
-                      <i (click)="destroy(msg.uuid)" class="fa fa-close" aria-hidden="true"></i>
+                      <a class="close" (click)="destroy(msg.uuid)">x</a>
                       <div>
                           <p>{{msg.message}}</p>
                       </div>
@@ -37,22 +37,38 @@ import { findIndex } from 'lodash';
               padding: 7px;
             }
             
-            .alert i.fa-close {
+            .alert .close {
               position: absolute;
               right: 8px;
               top: auto;
               margin-top: 2px;
             }
             
-            .alert i.fa-close:hover {
+            .alert .close:hover {
               cursor: pointer;
+            }
+            
+            .alert-danger {
+              background-color: #E57373;
+            }
+          
+            .alert-warning {
+              background-color: #FFCC00;
+            }
+          
+            .alert-success {
+              background-color: #2ecc71;
+            }
+          
+            .alert-info {
+              background-color: #90CAF9;
             }
            `],
 })
 
 export class FlashMessagesComponent {
 
-  @Input('messagePositioning') private messagePositioning: FlashMessagePositioning;
+  @Input('messagePositioning') private messagePositioning: FlashMessagePositioning = 'top-right';
 
   private flashMsg: Array<FlashMessageInterface>;
 

@@ -1,0 +1,22 @@
+.idea
+logs
+
+# typings
+typings
+
+#dev and demo
+.config
+.editorconfig
+.eslintrc.json
+.ng2-config.js
+.npmignore
+.travis.yml
+gulpfile.js
+protractor.conf.js
+spec-bundle.js
+tsconfig.json
+src/tsconfig.json
+src/app
+tslint.json
+typedoc.js
+wallaby.js
